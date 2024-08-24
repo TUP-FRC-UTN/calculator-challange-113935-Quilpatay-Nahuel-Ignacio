@@ -1,0 +1,47 @@
+<div class="container mt-5">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card p-4 shadow-sm">
+          <h3 class="text-center mb-4">Calculadora</h3>
+          <form id="calculator-form">
+            <div class="mb-3">
+              <input type="number" name="value1" [(ngModel)]="value1" class="form-control" placeholder="Valor 1" aria-label="Valor 1">
+            </div>
+            <div class="mb-3">
+              <input type="number" name="value2" [(ngModel)]="value2" class="form-control" placeholder="Valor 2" aria-label="Valor 2">
+            </div>
+            <div class="mb-3">
+              <div class="row g-2">
+                <div class="col-6">
+                  <button type="button" class="btn btn-primary w-100" (click)="calculate('+')">+</button>
+                </div>
+                <div class="col-6">
+                  <button type="button" class="btn btn-primary w-100" (click)="calculate('-')">-</button>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="row g-2">
+                <div class="col-6">
+                  <button type="button" class="btn btn-primary w-100" (click)="calculate('*')">*</button>
+                </div>
+                <div class="col-6">
+                  <button type="button" class="btn btn-primary w-100" (click)="calculate('/')">/</button>
+                </div>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="row g-2">
+                <div class="col-6">
+                  <button type="button" class="btn btn-primary w-100" (click)="calculate('^')">^</button>
+                </div>
+                <div class="col-6">
+                  <button type="button" class="btn btn-danger w-100" (click)="clearInputs()">CE</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
